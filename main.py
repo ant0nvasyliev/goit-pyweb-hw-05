@@ -52,6 +52,7 @@ class CurrencyApp:
         if days < 1 or days > 10:
             raise ValueError("Enter days from 1 to 10.")
 
+
         results = []
         for i in range(days):
             date = (datetime.now() - timedelta(days=i)).strftime("%d.%m.%Y")
